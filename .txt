@@ -1,0 +1,56 @@
+Laravel Notes
+php framework
+
+Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable 
+and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks 
+used in many web projects, such as: 
+
+Simple, fast routing engine.
+Powerful dependency injection container.
+Multiple back-ends for session and cache storage.
+Expressive, intuitive database ORM.
+Database agnostic schema migrations.
+Robust background job processing.
+Real-time event broadcasting.
+______________________________________________________________________________________________________________________
+
+Laravel is a MVC framework
+uses OOP but isn't a single page application
+
+MVC
+Model - data
+View - presentation
+Controller - logic
+
+
+Route middlewares are used only on specific routes.
+
+From logic to template (methods):
+- with
+- compact
+- direct
+
+Create controller on cmd - php artisan make:controller UserController
+
+CSRF - Cross Site Request Forgery
+
+creating a demo of data before sending to db
+
+how to create new table - php artisan make:migration create_tablename_table
+how to add column to existing table - php artisan make:migration add_username_to_users_table
+then run php artisan migrate
+
+// Nav content - nav-link txt-whte
+create note
+display
+home page
+
+Jonzing in the clutches of PHP!!! 😎😎
+
+// To use bootstrap in laravel
+composer require laravel/ui
+php artisan ui bootstrap --auth
+
+// {{dd(Auth::user())}}
+
+'user_id'=>Auth::user()->id
